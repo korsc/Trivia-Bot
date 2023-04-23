@@ -56,7 +56,7 @@ Geography Trivia - !geo-trivia''')
     if message.content.startswith('!game-trivia'):
         question = get_questiongame()
         options = "\n".join([f"{option}" for option in question['options'].keys()])
-        await message.channel.send(f"{question['question']}\n{options}")
+        await message.channel.send(f```"{question['question']}\n{options}```")
 
         user = message.author
 
@@ -79,7 +79,7 @@ Geography Trivia - !geo-trivia''')
         question = get_questiongeo()
 
         options = "\n".join([f"{option}" for option in question['options'].keys()])
-        await message.channel.send(f"{question['question']}\n{options}")
+        await message.channel.send(f```"{question['question']}\n{options}```")
 
         user = message.author
 
@@ -102,7 +102,7 @@ Geography Trivia - !geo-trivia''')
     if message.content.startswith('!hist-trivia'):
         question = get_questionhist()
         options = "\n".join([f"{option}" for option in question['options'].keys()])
-        await message.channel.send(f"{question['question']}\n{options}")
+        await message.channel.send(f"```{question['question']}\n{options}```")
 
         user = message.author
 
@@ -124,7 +124,7 @@ Geography Trivia - !geo-trivia''')
     if message.content.startswith('!anime-trivia'):
         question = get_questionanime()
         options = "\n".join([f"{option}" for option in question['options'].keys()])
-        await message.channel.send(f"{question['question']}\n{options}")
+        await message.channel.send(f"```{question['question']}\n{options}```")
 
         user = message.author
 
